@@ -1,0 +1,43 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.3",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Idk",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"AIModule",
+				"UMG",
+				"CoreUObject",
+				"Voxel",
+				"Niagara",
+				"CommonUI"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "VoxelFree",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/b08e5581837e4bbca486b61cdf2751bb"
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
+		}
+	],
+	"TargetPlatforms": [
+		"Windows"
+	]
+}

@@ -1,0 +1,19 @@
+// Hint files help the Visual Studio IDE interpret Visual C++ identifiers
+// such as names of functions and macros.
+// For more information see https://go.microsoft.com/fwlink/?linkid=865984
+#define PURE_VIRTUAL(func, __VA_ARGS__)
+#define PURE_VIRTUAL(func, __VA_ARGS__) { LowLevelFatalError(TEXT("Pure virtual not implemented (%s)"), TEXT(#func)); __VA_ARGS__ }
+#define GENERATED_BODY(__VA_ARGS__) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+#define UENUM(__VA_ARGS__)
+#define UMETA(__VA_ARGS__)
+#define UPROPERTY(__VA_ARGS__)
+#define UE_DEFINE_GAMEPLAY_TAG(TagName, Tag) FNativeGameplayTag TagName(UE_PLUGIN_NAME, UE_MODULE_NAME, Tag, TEXT(""), ENativeGameplayTagToken::PRIVATE_USE_MACRO_INSTEAD); static_assert(UE::GameplayTags::Private::HasFileExtension(__FILE__), "UE_DEFINE_GAMEPLAY_TAG can only be used in .cpp files, if you're trying to share tags across modules, use UE_DECLARE_GAMEPLAY_TAG_EXTERN in the public header, and UE_DEFINE_GAMEPLAY_TAG in the private .cpp");
+#define UE_DECLARE_GAMEPLAY_TAG_EXTERN(TagName)
+#define UCLASS(__VA_ARGS__)
+#define UCLASS(__VA_ARGS__) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_PROLOG)
+#define IDK_API
+#define UPARAM(__VA_ARGS__)
+#define UE_NODISCARD [[nodiscard]]
+#define UE_NODISCARD
+#define DECLARE_MULTICAST_DELEGATE_OneParam(DelegateName, Param1Type) FUNC_DECLARE_MULTICAST_DELEGATE( DelegateName, void, Param1Type )
+#define DECLARE_DELEGATE_TwoParams(DelegateName, Param1Type, Param2Type) FUNC_DECLARE_DELEGATE( DelegateName, void, Param1Type, Param2Type )
