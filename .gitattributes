@@ -2,5 +2,5 @@
 * text=auto
 T_RevaCliff_D.uasset filter=lfs diff=lfs merge=lfs -text
 T_LargePlainsBoulder002_N.uasset filter=lfs diff=lfs merge=lfs -text
-T_RevaCliff_N.uasset02_N.uasset filter=lfs diff=lfs merge=lfs -text
+T_RevaCliff_N.uasset filter=lfs diff=lfs merge=lfs -text
 TC_EpicQuadPanorama_CC.uasset filter=lfs diff=lfs merge=lfs -text
